@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="eBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#071416"></stop>
+      <stop offset="1" stop-color="#040a0b"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="#050a0b"></rect>
+
+  <rect x="150" y="80" width="600" height="1080" rx="56" fill="#030707" stroke="#132123" stroke-width="2"></rect>
+  <rect x="170" y="100" width="560" height="1040" rx="40" fill="url(#eBg)"></rect>
+
+  <rect x="380" y="108" width="140" height="28" rx="14" fill="#000"></rect>
+
+  <text x="200" y="152" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#F5F5F2" font-weight="600">9:41</text>
+  <rect x="660" y="142" width="22" height="12" rx="2" stroke="#F5F5F2" fill="none" stroke-width="1"></rect>
+  <rect x="662" y="144" width="16" height="8" rx="1" fill="#F5F5F2"></rect>
+
+  <text x="200" y="212" font-family="monospace" font-size="10" fill="#5c7a7d" letter-spacing="2">VOCABULARY CARD - 12 / 20</text>
+
+  <rect x="200" y="236" width="500" height="380" rx="26" fill="#081618" stroke="rgba(245,245,242,0.08)"></rect>
+
+  <rect x="232" y="268" width="436" height="180" rx="16" fill="#0c2024"></rect>
+  <circle cx="380" cy="330" r="30" fill="oklch(0.72 0.15 195)" fill-opacity="0.25"></circle>
+  <path d="M 300 420 L 360 348 L 408 400 L 448 360 L 520 420 Z" fill="oklch(0.72 0.15 195)" fill-opacity="0.35"></path>
+  <path d="M 232 420 L 668 420" stroke="rgba(245,245,242,0.08)"></path>
+
+  <text x="232" y="500" font-family="'Space Grotesk', sans-serif" font-size="40" font-weight="500" fill="#F5F5F2" letter-spacing="-1">mountain</text>
+  <text x="232" y="540" font-family="monospace" font-size="12" fill="#5c7a7d">/ˈmaʊntən/ - noun</text>
+  <text x="640" y="540" font-family="'Space Grotesk', sans-serif" font-size="28" fill="oklch(0.72 0.15 195)" text-anchor="end">جَبَل</text>
+  <text x="232" y="584" font-family="'Space Grotesk', sans-serif" font-size="15" fill="#8fa8ab">We climbed the mountain.</text>
+
+  <circle cx="648" cy="288" r="22" fill="oklch(0.72 0.15 195)"></circle>
+  <path d="M 640 280 L 640 296 L 650 296 L 660 306 L 660 270 L 650 280 Z" fill="#040a0b"></path>
+
+  <text x="200" y="672" font-family="monospace" font-size="10" fill="#5c7a7d" letter-spacing="2">FILL IN THE BLANK</text>
+  <rect x="200" y="694" width="500" height="92" rx="16" fill="#081618" stroke="rgba(245,245,242,0.06)"></rect>
+  <text x="228" y="736" font-family="'Space Grotesk', sans-serif" font-size="17" fill="#F5F5F2">The bird flew over the</text>
+  <rect x="228" y="750" width="110" height="20" rx="4" fill="oklch(0.72 0.15 195)" fill-opacity="0.2"></rect>
+  <line x1="228" y1="772" x2="338" y2="772" stroke="oklch(0.72 0.15 195)" stroke-width="2"></line>
+
+  <text x="200" y="838" font-family="monospace" font-size="10" fill="#5c7a7d" letter-spacing="2">MATCH THE WORD</text>
+  <rect x="200" y="860" width="236" height="64" rx="14" fill="#0c2024"></rect>
+  <text x="224" y="900" font-family="'Space Grotesk', sans-serif" font-size="17" fill="#F5F5F2">river</text>
+  <rect x="464" y="860" width="236" height="64" rx="14" fill="#0c2024"></rect>
+  <text x="676" y="900" font-family="'Space Grotesk', sans-serif" font-size="20" fill="#F5F5F2" text-anchor="end">نَهْر</text>
+  <path d="M 436 892 L 464 892" stroke="oklch(0.72 0.15 195)" stroke-width="2" stroke-dasharray="4 4"></path>
+
+  <rect x="200" y="954" width="236" height="64" rx="14" fill="#0c2024"></rect>
+  <text x="224" y="994" font-family="'Space Grotesk', sans-serif" font-size="17" fill="#F5F5F2">sun</text>
+  <rect x="464" y="954" width="236" height="64" rx="14" fill="#0c2024"></rect>
+  <text x="676" y="994" font-family="'Space Grotesk', sans-serif" font-size="20" fill="#F5F5F2" text-anchor="end">شَمْس</text>
+
+  <rect x="200" y="1060" width="446" height="1" fill="rgba(245,245,242,0.06)"></rect>
+  <text x="200" y="1098" font-family="monospace" font-size="10" fill="#5c7a7d" letter-spacing="2">06 - ENGLISH VOCABULARY</text>
+  <text x="590" y="1098" font-family="monospace" font-size="10" fill="#5c7a7d" letter-spacing="2">2025</text>
+</svg>

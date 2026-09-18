@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0f18"></stop>
+      <stop offset="1" stop-color="#06080e"></stop>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(245,245,242,0.04)" stroke-width="1"></path>
+    </pattern>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="oklch(0.72 0.18 245)" stop-opacity="0.20"></stop>
+      <stop offset="1" stop-color="oklch(0.72 0.18 245)" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <rect width="800" height="600" fill="url(#glow)"></rect>
+
+  <rect x="72" y="72" width="8" height="8" fill="oklch(0.72 0.18 245)"></rect>
+  <text x="96" y="80" font-family="monospace" font-size="13" fill="rgba(245,245,242,0.55)" letter-spacing="2">EDUCATION &amp; STUDY MATERIALS</text>
+
+  <g transform="translate(524, 150)"><path d="M0 0 H150 L196 46 V260 H0 Z" fill="#ffffff" fill-opacity="0.045" stroke="rgba(245,245,242,0.18)"></path><path d="M150 0 L196 46 H150 Z" fill="rgba(245,245,242,0.16)"></path><rect x="24" y="78" width="86" height="12" rx="2" fill="oklch(0.72 0.18 245)"></rect><rect x="24" y="108" width="118" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="128" width="148" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="148" width="132" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="168" width="148" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="188" width="96" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="208" width="148" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect><rect x="24" y="228" width="140" height="9" rx="2" fill="rgba(245,245,242,0.16)"></rect></g>
+
+  <text x="72" y="250" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="500" fill="#F5F5F2" letter-spacing="-1.5">IELTS Academic</text><text x="72" y="304" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="500" fill="#F5F5F2" letter-spacing="-1.5">Writing Practice</text><text x="72" y="358" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="500" fill="#F5F5F2" letter-spacing="-1.5">Guide</text>
+
+  <line x1="72" y1="486" x2="728" y2="486" stroke="rgba(245,245,242,0.12)"></line>
+  <rect x="72" y="510" width="62" height="28" rx="14" fill="oklch(0.72 0.18 245)"></rect>
+  <text x="103" y="529" font-family="monospace" font-size="13" font-weight="700" fill="#06080e" text-anchor="middle">PDF</text>
+  <text x="150" y="529" font-family="monospace" font-size="13" fill="rgba(245,245,242,0.5)" letter-spacing="1">86 pages</text>
+</svg>

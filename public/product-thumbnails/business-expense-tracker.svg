@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#08140e"></stop>
+      <stop offset="1" stop-color="#050a07"></stop>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="rgba(245,245,242,0.04)" stroke-width="1"></path>
+    </pattern>
+    <radialGradient id="glow" cx="0.82" cy="0.18" r="0.55">
+      <stop offset="0" stop-color="oklch(0.75 0.17 155)" stop-opacity="0.20"></stop>
+      <stop offset="1" stop-color="oklch(0.75 0.17 155)" stop-opacity="0"></stop>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#bg)"></rect>
+  <rect width="800" height="600" fill="url(#grid)"></rect>
+  <rect width="800" height="600" fill="url(#glow)"></rect>
+
+  <rect x="72" y="72" width="8" height="8" fill="oklch(0.75 0.17 155)"></rect>
+  <text x="96" y="80" font-family="monospace" font-size="13" fill="rgba(245,245,242,0.55)" letter-spacing="2">FINANCE &amp; BUDGETING</text>
+
+  <g transform="translate(524, 150)"><path d="M0 0 H150 L196 46 V260 H0 Z" fill="#ffffff" fill-opacity="0.045" stroke="rgba(245,245,242,0.18)"></path><path d="M150 0 L196 46 H150 Z" fill="rgba(245,245,242,0.16)"></path><rect x="24" y="80" width="148" height="26" fill="oklch(0.75 0.17 155)" fill-opacity="0.35"></rect><rect x="24" y="106" width="148" height="26" fill="rgba(245,245,242,0.05)"></rect><rect x="24" y="132" width="148" height="26" fill="rgba(245,245,242,0.05)"></rect><rect x="24" y="158" width="148" height="26" fill="rgba(245,245,242,0.05)"></rect><rect x="24" y="184" width="148" height="26" fill="rgba(245,245,242,0.05)"></rect><line x1="73" y1="80" x2="73" y2="210" stroke="rgba(245,245,242,0.14)"></line><line x1="122" y1="80" x2="122" y2="210" stroke="rgba(245,245,242,0.14)"></line><line x1="24" y1="80" x2="172" y2="80" stroke="rgba(245,245,242,0.14)"></line><line x1="24" y1="106" x2="172" y2="106" stroke="rgba(245,245,242,0.14)"></line><line x1="24" y1="132" x2="172" y2="132" stroke="rgba(245,245,242,0.14)"></line><line x1="24" y1="158" x2="172" y2="158" stroke="rgba(245,245,242,0.14)"></line><line x1="24" y1="184" x2="172" y2="184" stroke="rgba(245,245,242,0.14)"></line><rect x="24" y="80" width="148" height="130" fill="none" stroke="rgba(245,245,242,0.2)"></rect></g>
+
+  <text x="72" y="250" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="500" fill="#F5F5F2" letter-spacing="-1.5">Business Expense</text><text x="72" y="304" font-family="'Space Grotesk', sans-serif" font-size="44" font-weight="500" fill="#F5F5F2" letter-spacing="-1.5">Tracker</text>
+
+  <line x1="72" y1="486" x2="728" y2="486" stroke="rgba(245,245,242,0.12)"></line>
+  <rect x="72" y="510" width="62" height="28" rx="14" fill="oklch(0.75 0.17 155)"></rect>
+  <text x="103" y="529" font-family="monospace" font-size="13" font-weight="700" fill="#06080e" text-anchor="middle">CSV</text>
+  <text x="150" y="529" font-family="monospace" font-size="13" fill="rgba(245,245,242,0.5)" letter-spacing="1">268 rows</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="kBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08140e"></stop>
+      <stop offset="1" stop-color="#050a07"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1200" fill="#060a08"></rect>
+
+  <rect x="150" y="80" width="600" height="1080" rx="56" fill="#040705" stroke="#16211a" stroke-width="2"></rect>
+  <rect x="170" y="100" width="560" height="1040" rx="40" fill="url(#kBg)"></rect>
+
+  <rect x="380" y="108" width="140" height="28" rx="14" fill="#000"></rect>
+
+  <text x="200" y="152" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#F5F5F2" font-weight="600">9:41</text>
+  <rect x="660" y="142" width="22" height="12" rx="2" stroke="#F5F5F2" fill="none" stroke-width="1"></rect>
+  <rect x="662" y="144" width="16" height="8" rx="1" fill="#F5F5F2"></rect>
+
+  <text x="200" y="212" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="2">SHIKHI AI - TUTOR</text>
+  <text x="200" y="258" font-family="'Space Grotesk', sans-serif" font-size="30" font-weight="500" fill="#F5F5F2" letter-spacing="-1">Reading practice</text>
+
+  <circle cx="230" cy="320" r="22" fill="oklch(0.75 0.17 155)" fill-opacity="0.16"></circle>
+  <circle cx="230" cy="320" r="9" fill="oklch(0.75 0.17 155)"></circle>
+  <rect x="266" y="296" width="380" height="96" rx="16" fill="#0c1811"></rect>
+  <text x="286" y="326" font-family="'Space Grotesk', sans-serif" font-size="14" fill="#F5F5F2">The kite flew over the river.</text>
+  <text x="286" y="356" font-family="monospace" font-size="11" fill="#5f7a6b">kite = ঘুড়ি</text>
+  <text x="286" y="378" font-family="monospace" font-size="11" fill="#5f7a6b">river = নদী</text>
+
+  <rect x="200" y="420" width="446" height="1" fill="rgba(245,245,242,0.06)"></rect>
+
+  <text x="200" y="462" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="2">YOUR TURN - READ ALOUD</text>
+  <rect x="200" y="484" width="500" height="120" rx="18" fill="#0a140d" stroke="rgba(245,245,242,0.08)"></rect>
+
+  <path d="M 224 544 L 244 544 L 254 520 L 266 568 L 278 528 L 290 556 L 302 536 L 314 550 L 326 544 L 400 544" fill="none" stroke="oklch(0.75 0.17 155)" stroke-width="2"></path>
+  <path d="M 400 544 L 416 544 L 426 532 L 438 556 L 450 540 L 462 548 L 474 544 L 676 544" fill="none" stroke="#1e3327" stroke-width="2"></path>
+
+  <circle cx="450" cy="668" r="46" fill="oklch(0.75 0.17 155)"></circle>
+  <rect x="442" y="648" width="16" height="28" rx="8" fill="#050a07"></rect>
+  <path d="M 432 674 a 18 18 0 0 0 36 0" fill="none" stroke="#050a07" stroke-width="4"></path>
+  <line x1="450" y1="692" x2="450" y2="702" stroke="#050a07" stroke-width="4"></line>
+
+  <text x="200" y="782" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="2">TODAY</text>
+  <rect x="200" y="802" width="236" height="96" rx="16" fill="#0c1811"></rect>
+  <text x="222" y="842" font-family="'Space Grotesk', sans-serif" font-size="26" fill="#F5F5F2" font-weight="500">24</text>
+  <text x="222" y="872" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="1">WORDS LEARNED</text>
+  <rect x="452" y="802" width="194" height="96" rx="16" fill="#0c1811"></rect>
+  <text x="474" y="842" font-family="'Space Grotesk', sans-serif" font-size="26" fill="oklch(0.75 0.17 155)" font-weight="500">7</text>
+  <text x="474" y="872" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="1">DAY STREAK</text>
+
+  <rect x="200" y="930" width="446" height="8" rx="4" fill="#12201a"></rect>
+  <rect x="200" y="930" width="300" height="8" rx="4" fill="oklch(0.75 0.17 155)"></rect>
+  <text x="200" y="968" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="1">LEVEL 4 - বাংলায় ব্যাখ্যা</text>
+
+  <rect x="200" y="1030" width="446" height="1" fill="rgba(245,245,242,0.06)"></rect>
+  <text x="200" y="1070" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="2">02 - SHIKHI AI</text>
+  <text x="590" y="1070" font-family="monospace" font-size="10" fill="#5f7a6b" letter-spacing="2">2025</text>
+</svg>
