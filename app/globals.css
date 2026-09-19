@@ -79,11 +79,6 @@ textarea,
 select {
   font: inherit;
 }
-@media (min-width: 768px) and (pointer: fine) {
-  body {
-    cursor: none;
-  }
-}
 
 ::selection {
   background: var(--primary);
