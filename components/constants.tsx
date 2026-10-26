@@ -1,4 +1,4 @@
-import { Bot, Globe, Smartphone } from "lucide-react";
+import { Bot, Globe, Workflow } from "lucide-react";
 
 export type Service = {
   id: string;
@@ -23,27 +23,27 @@ export type WorkItem = {
 export const SERVICES: Service[] = [
   {
     id: "01",
-    title: "Websites",
+    title: "Lead Autopilot",
     description:
-      "Marketing sites, product pages, and platforms designed to convert rather than decorate.",
-    tags: ["Next.js", "Tailwind", "SEO"],
-    icon: <Globe className="h-6 w-6" aria-hidden="true" />,
+      "Every inquiry from your site, WhatsApp, or email gets an instant reply in your tone, is qualified, logged, and followed up. Live in 7 days.",
+    tags: ["Instant reply", "Qualify", "Follow-up", "Weekly report"],
+    icon: <Bot className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "02",
-    title: "Mobile Apps",
+    title: "Websites",
     description:
-      "iOS and Android experiences with a native feel, shipped with a product mindset.",
-    tags: ["React Native", "Expo", "Motion"],
-    icon: <Smartphone className="h-6 w-6" aria-hidden="true" />,
+      "Fast, clean sites built to turn visitors into inquiries, with Lead Autopilot wired in from day one.",
+    tags: ["Next.js", "SEO", "Autopilot-ready"],
+    icon: <Globe className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "03",
-    title: "AI Automation",
+    title: "Custom Automation",
     description:
-      "Workflows, agents, and internal tools that remove repetitive work from the operating model.",
-    tags: ["Claude", "n8n", "Routing"],
-    icon: <Bot className="h-6 w-6" aria-hidden="true" />,
+      "Booking, invoicing, reporting, and other repetitive work handed to AI workflows that run without you.",
+    tags: ["Claude", "n8n", "Integrations"],
+    icon: <Workflow className="h-6 w-6" aria-hidden="true" />,
   },
 ];
 
@@ -178,3 +178,9 @@ export const ABOUT_LINES = [
   "We take two clients at a time. Never three.",
   "If we say yes, we already know how it ends.",
 ];
+
+/** International format, digits only (Bangladesh +880). Used for wa.me links. */
+export const WHATSAPP_NUMBER = "8801743001963";
+export const WHATSAPP_GREETING =
+  "Hi Aethon Lab! I'd like to know more about Lead Autopilot.";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_GREETING)}`;

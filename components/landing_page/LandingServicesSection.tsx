@@ -17,8 +17,8 @@ export function LandingServicesSection() {
     <SectionShell
       id="services"
       eyebrow="02 - Services"
-      title="What we forge, end to end."
-      summary="Three lanes. Zero fluff."
+      title="Stop losing leads to slow replies."
+      summary="One flagship offer. Two ways to extend it."
     >
       <div className="grid gap-1 overflow-hidden rounded-4xl border border-white/10 bg-white/10 lg:grid-cols-3">
         {SERVICES.map((service, index) => (

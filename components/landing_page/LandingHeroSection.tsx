@@ -29,14 +29,16 @@ export function LandingHeroSection() {
 
           <div className="space-y-6">
             <h1 className="reveal text-display max-w-5xl text-[clamp(3.75rem,7vw,7.8rem)] font-medium leading-[0.88] tracking-tighter text-white">
-              We do not just build.
+              Every lead answered.
               <br />
-              We think first.
+              In under a minute.
             </h1>
 
             <p className="reveal max-w-2xl text-lg leading-8 text-white/68 sm:text-xl">
-              A strategy-first studio building websites, mobile apps, and AI
-              systems for teams that want precision over noise.
+              Lead Autopilot replies to every inquiry on your website, WhatsApp,
+              and email instantly, in your tone. It qualifies the lead, books
+              the call, and follows up so you never lose a customer to a slow
+              reply.
             </p>
           </div>
 
@@ -48,7 +50,7 @@ export function LandingHeroSection() {
             >
               <a href="#contact">
                 <Sparkles className="h-4 w-4" aria-hidden="true" />
-                Start a project
+                Try it: send us a message
                 <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
               </a>
             </Button>
@@ -67,10 +69,10 @@ export function LandingHeroSection() {
           </div>
 
           <div className="reveal flex flex-wrap gap-3 border-t border-dashed border-white/10 pt-4 font-mono text-[11px] uppercase tracking-[0.24em] text-white/55">
-            <span className="text-primary">Currently forging</span>
-            <span>AI ops platform for a fintech</span>
-            <span>Mobile app for a sports club</span>
-            <span>Marketing site for a startup</span>
+            <span className="text-primary">Pilot program</span>
+            <span>Live in 7 days</span>
+            <span>Works with your existing site</span>
+            <span>Limited pilot spots</span>
           </div>
         </div>
 
@@ -82,54 +84,41 @@ export function LandingHeroSection() {
                 variant="secondary"
                 className="bg-white/8 text-[10px] text-white/70"
               >
-                Live brief
+                Example run
               </Badge>
               <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
-                03 active engagements
+                Dental clinic - 21:47
               </span>
             </div>
             <CardTitle className="text-3xl text-white">
-              Strategy that ships without losing intent.
+              A lead at 9:47 pm, handled before the owner sees it.
             </CardTitle>
             <CardDescription className="max-w-md text-white/62">
-              The studio keeps design, engineering, and systems work on the same
-              roadmap so decisions stay connected.
+              &ldquo;Hi, do you do teeth whitening? How much and can I come
+              this week?&rdquo;
             </CardDescription>
           </CardHeader>
 
-          <CardContent className="relative space-y-6 p-6 sm:p-8">
-            <div className="space-y-3">
-              <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/55">
-                <span className="text-mono">Focus</span>
-                <span>74%</span>
+          <CardContent className="relative space-y-3 p-6 sm:p-8">
+            {[
+              ["00:00:41", "Replied with price range + 3 open slots"],
+              ["00:00:42", "Qualified: hot - wants this week"],
+              ["00:03:10", "Booked: Thursday 10:30"],
+              ["00:03:11", "Logged to sheet, owner notified"],
+            ].map(([time, label]) => (
+              <div
+                key={time}
+                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/3 p-4"
+              >
+                <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-primary">
+                  {time}
+                </span>
+                <span className="text-sm text-white/80">{label}</span>
               </div>
-              <div className="h-2 rounded-full bg-white/8">
-                <div className="h-2 w-[74%] rounded-full bg-primary shadow-[0_0_20px_rgba(255,60,0,.4)]" />
-              </div>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                ["01", "Web"],
-                ["02", "App"],
-                ["03", "AI"],
-              ].map(([index, label]) => (
-                <div
-                  key={index}
-                  className="rounded-2xl border border-white/10 bg-white/3 p-4"
-                >
-                  <div className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
-                    {index}
-                  </div>
-                  <div className="mt-2 text-display text-xl font-medium text-white">
-                    {label}
-                  </div>
-                </div>
-              ))}
-            </div>
+            ))}
 
             <div className="rounded-2xl border border-white/10 bg-black/20 p-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
-              Booking window: Q3 2026
+              Want to see it live? Use the form below.
             </div>
           </CardContent>
         </Card>

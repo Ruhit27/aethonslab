@@ -9,9 +9,7 @@ import { cnHeader } from "../../lib/cn";
 const NAV_LINKS = [
   { href: "#services", label: "Services" },
   { href: "#work", label: "Work" },
-  { href: "#products", label: "Products" },
   { href: "#process", label: "Process" },
-  { href: "/digital-products", label: "Shop" },
   { href: "#contact", label: "Contact" },
 ];
 

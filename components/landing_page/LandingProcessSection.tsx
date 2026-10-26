@@ -29,7 +29,7 @@ export function LandingProcessSection() {
       </div>
 
       <SectionShell
-        eyebrow="06 - Process"
+        eyebrow="05 - Process"
         title="Think. Forge. Launch."
         summary="Three steps. No theater."
         compact

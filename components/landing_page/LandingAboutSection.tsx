@@ -7,7 +7,7 @@ export function LandingAboutSection() {
   return (
     <SectionShell
       id="about"
-      eyebrow="07 - About"
+      eyebrow="06 - About"
       title="A studio of four, on purpose."
       summary="Four lines. That's enough."
     >
