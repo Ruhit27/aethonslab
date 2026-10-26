@@ -2,7 +2,7 @@ import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 import { cn } from "@/lib/utils";
 
-type ButtonVariant = "default" | "outline" | "ghost" | "secondary";
+type ButtonVariant = "default" | "outline" | "ghost" | "secondary" | "link";
 type ButtonSize = "sm" | "default" | "lg";
 
 export interface ButtonProps
@@ -19,6 +19,7 @@ const variantClasses: Record<ButtonVariant, string> = {
     "border border-white/12 bg-white/4 text-foreground hover:bg-white/8",
   ghost: "text-foreground hover:bg-white/8",
   secondary: "bg-white/8 text-foreground hover:bg-white/12",
+  link: "text-primary underline-offset-4 hover:underline",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

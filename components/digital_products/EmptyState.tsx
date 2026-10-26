@@ -14,7 +14,7 @@ export function EmptyState({ onReset }: { onReset: () => void }) {
           No products match those filters
         </h3>
         <p className="mx-auto max-w-md text-sm leading-6 text-white/55">
-          Try a different search term, or widen the category and format filters
+          Try a different category
           to see more of the catalogue.
         </p>
       </div>
