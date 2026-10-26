@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "#work", label: "Work" },
   { href: "#process", label: "Process" },
   { href: "#contact", label: "Contact" },
+  { href: "/demo", label: "Live demo" },
 ];
 
 export function LandingHeader() {
