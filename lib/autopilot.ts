@@ -10,6 +10,7 @@ import Groq from "groq-sdk";
 export const MODEL = "claude-opus-5-5";
 
 export const BUSINESS_CONTEXT = `You are Lead Autopilot for Aethon Lab, a small studio that builds AI automations and websites for small businesses.
+Aethon Lab is based in Seri Kembangan, Kuala Lumpur, Malaysia, and works with clients remotely.
 
 Aethon Lab's offer:
 - Lead Autopilot: every inquiry from a business's website, WhatsApp or email gets an instant reply in their tone, is qualified, logged to a sheet or CRM, and followed up automatically. Live in 7 days.

@@ -1,81 +1,81 @@
-"use client";
-
-import * as React from "react";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { SectionShell } from "./SectionShell";
-import { WORK } from "../constants";
-import { cnCardLink } from "../../lib/cn";
+import { Ember } from "@/components/mascot/Ember";
+import { WORK, type WorkItem } from "../constants";
+
+function ProjectLogo({ item }: { item: WorkItem }) {
+  const mark = item.logo ? (
+    <Image
+      src={item.logo}
+      alt={item.title}
+      width={160}
+      height={48}
+      className="h-10 w-auto object-contain opacity-60 brightness-0 invert transition-opacity group-hover:opacity-100"
+    />
+  ) : (
+    <span
+      className={`whitespace-nowrap text-white/55 transition-colors group-hover:text-white ${item.wordmarkClass}`}
+    >
+      {item.title}
+    </span>
+  );
+
+  const body = (
+    <>
+      {mark}
+      <span className="whitespace-nowrap text-mono text-[10px] uppercase tracking-[0.24em] text-white/30 transition-colors group-hover:text-white/55">
+        {item.category.split(" - ")[0]}
+      </span>
+    </>
+  );
+
+  const className =
+    "group flex h-24 shrink-0 flex-col items-center justify-center gap-2 px-10 sm:px-14";
+
+  return item.href ? (
+    <a
+      href={item.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      title={`${item.title} - visit site`}
+      className={className}
+    >
+      {body}
+    </a>
+  ) : (
+    <div title={item.title} className={className}>
+      {body}
+    </div>
+  );
+}
 
 export function LandingWorkSection() {
   return (
-    <SectionShell
-      id="work"
-      eyebrow="04 - Selected Work"
-      title="Nothing here is a template."
-      summary="A small, deliberate portfolio."
-    >
-      <div className="grid gap-6 lg:grid-cols-6">
-        {WORK.map((item, index) => {
-          const wide = index === 0 || index === 3;
-          const external = Boolean(item.href);
-
-          return (
-            <a
-              key={item.id}
-              href={item.href ?? "#contact"}
-              target={external ? "_blank" : undefined}
-              rel={external ? "noopener noreferrer" : undefined}
-              className={cnCardLink(wide ? "lg:col-span-4" : "lg:col-span-2")}
-            >
-              <Card className="reveal group overflow-hidden border-white/10 bg-white/3 p-0 transition-transform duration-300 hover:-translate-y-1">
-                <div
-                  className="relative overflow-hidden border-b border-white/10"
-                  style={{ aspectRatio: item.ratio }}
-                >
-                  <Image
-                    src={item.image}
-                    alt={`${item.title} portfolio preview`}
-                    fill
-                    preload={index === 0}
-                    sizes={
-                      wide
-                        ? "(min-width: 1024px) 66vw, 100vw"
-                        : "(min-width: 1024px) 33vw, 100vw"
-                    }
-                    className="object-cover transition duration-700 group-hover:scale-[1.03] group-hover:brightness-75"
-                  />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.28))]" />
-                  <span className="absolute left-4 top-4 text-mono text-[11px] uppercase tracking-[0.24em] text-white/60">
-                    {item.label}
-                  </span>
-                  <span className="absolute bottom-4 right-4 text-mono text-[11px] uppercase tracking-[0.24em] text-white/60">
-                    {item.ratio}
-                  </span>
-                  <div className="absolute inset-0 flex items-center justify-center bg-black/0 opacity-0 transition-opacity duration-300 group-hover:bg-black/60 group-hover:opacity-100">
-                    <span className="text-mono text-[11px] uppercase tracking-[0.3em] text-white">
-                      {external ? "Visit site" : "View case"}
-                    </span>
-                  </div>
-                </div>
-
-                <CardContent className="grid gap-2 p-5 sm:p-6">
-                  <div className="flex items-center justify-between gap-3 text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
-                    <span>{item.id}</span>
-                    <span>{item.year}</span>
-                  </div>
-                  <div className="text-display text-2xl font-medium text-white">
-                    {item.title}
-                  </div>
-                  <div className="text-sm leading-6 text-white/60">
-                    {item.category}
-                  </div>
-                </CardContent>
-              </Card>
-            </a>
-          );
-        })}
+    <section id="work" aria-label="Selected work" className="py-12 sm:py-16">
+      <div className="reveal relative">
+        {/* Ember walks on the strip while the logos slide under it. */}
+        <Ember
+          pose="idle"
+          walking
+          className="absolute bottom-full left-[14%] z-10 -mb-px h-9 w-9 overflow-visible sm:h-10 sm:w-10"
+        />
+        <div className="marquee overflow-hidden border-y border-white/10 mask-[linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]">
+          {/* Two copies side by side; the track slides left by half for a seamless loop. */}
+          <div className="marquee-track flex w-max">
+            {[0, 1].map((copy) => (
+              <div
+                key={copy}
+                className="flex shrink-0 items-center divide-x divide-white/10"
+                aria-hidden={copy === 1}
+                inert={copy === 1}
+              >
+                {WORK.map((item) => (
+                  <ProjectLogo key={item.id} item={item} />
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </SectionShell>
+    </section>
   );
 }

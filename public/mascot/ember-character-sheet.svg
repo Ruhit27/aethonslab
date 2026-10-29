@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1010" role="img" aria-label="Ember character sheet"><title>Ember character sheet</title><rect width="1440" height="1010" fill="#06070b"/><rect x="60" y="56" width="14" height="14" rx="3" fill="#FF3C00"/><text x="86" y="69" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#F5F5F2" fill-opacity="0.55" letter-spacing="2">AETHON LAB · MASCOT CHARACTER SHEET · V1</text><text x="60" y="128" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="60" font-weight="500" letter-spacing="-2" fill="#F5F5F2">Ember</text><text x="252" y="128" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="22" fill="#F5F5F2" fill-opacity="0.6">The Aethon Lab square, lit up. Aethon means "blazing".</text><rect x="60" y="160" width="520" height="500" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><circle cx="320" cy="400" r="190" fill="none" stroke="#FF3C00" stroke-opacity="0.14"/><circle cx="320" cy="400" r="150" fill="none" stroke="#FF3C00" stroke-opacity="0.08"/><g transform="translate(110 182) scale(2.1)">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(-6 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="88" y="196" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#F5F5F2" fill-opacity="0.55" letter-spacing="2">HERO · IDLE</text><text x="88" y="636" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.4" letter-spacing="2">TILT -6° · FLAME LIGHTER THAN BODY · EYES ARE PILLS</text><rect x="620" y="160" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(650 168) scale(0.9)">
+  <g transform="translate(100 100) scale(1.08) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(-4 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    <path d="M78 140 Q84.5 128 91 140" fill="none" stroke="#06070b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M108 140 Q114.5 128 121 140" fill="none" stroke="#06070b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M86 155 Q100 158 114 155 Q112 174 100 174 Q88 174 86 155 Z" fill="#06070b"/><circle cx="71" cy="154" r="6" fill="#FF8A4C"/><circle cx="129" cy="154" r="6" fill="#FF8A4C"/>
+  </g>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="642" y="368" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Happy</text><text x="642" y="387" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">Form sent, success states</text><rect x="880" y="160" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(910 168) scale(0.9)">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(4 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="83" y="118" width="11" height="18" rx="5.5" fill="#06070b"/>
+  <rect x="85" y="120" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="113" y="118" width="11" height="18" rx="5.5" fill="#06070b"/>
+  <rect x="115" y="120" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M94 166 Q102 163 110 166" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g><circle cx="150" cy="94" r="3.5" fill="#68A7FF"/><circle cx="159" cy="80" r="5" fill="#68A7FF"/><path d="M174 42 Q175.92 56.08 190 58 Q175.92 59.92 174 74 Q172.08 59.92 158 58 Q172.08 56.08 174 42 Z" fill="#68A7FF"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="902" y="368" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Thinking</text><text x="902" y="387" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">Loading, strategy, 'we think first'</text><rect x="1140" y="160" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(1170 168) scale(0.9)">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g><rect x="43" y="138" width="12" height="26" rx="6" fill="#FF3C00" transform="rotate(14 49 138)"/><rect x="146" y="98" width="12" height="32" rx="6" fill="#FF3C00" transform="rotate(28 152 130)"/>
+  <g transform="rotate(-6 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M106 136 Q114.5 126 123 136" fill="none" stroke="#06070b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 158 Q100 160 112 158 Q110 172 100 172 Q90 172 88 158 Z" fill="#06070b"/>
+  </g><path d="M170 84 Q180 94 176 108" fill="none" stroke="#68A7FF" stroke-width="3" stroke-linecap="round"/><path d="M180 74 Q194 90 188 112" fill="none" stroke="#68A7FF" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="1162" y="368" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Waving</text><text x="1162" y="387" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">Chat launcher, greetings</text><rect x="620" y="420" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(650 428) scale(0.9)">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(-3 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="80" y="128" width="11" height="15" rx="5.5" fill="#06070b"/>
+  <rect x="82" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="110" y="128" width="11" height="15" rx="5.5" fill="#06070b"/>
+  <rect x="112" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  </g><rect x="62" y="148" width="76" height="46" rx="8" fill="#06070b" stroke="#FF8A4C" stroke-width="2"/><polyline points="86,161 77,171 86,181" fill="none" stroke="#FF3C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><polyline points="114,161 123,171 114,181" fill="none" stroke="#FF3C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><line x1="104" y1="159" x2="96" y2="183" stroke="#68A7FF" stroke-width="4" stroke-linecap="round"/><circle cx="61" cy="168" r="7" fill="#FF3C00"/><circle cx="139" cy="168" r="7" fill="#FF3C00"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="642" y="628" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Building</text><text x="642" y="647" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">Services, web and automation work</text><rect x="880" y="420" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(910 428) scale(0.9)">
+  <g transform="translate(100 100) scale(1.18) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    <circle cx="85" cy="135" r="8" fill="#06070b"/><circle cx="115" cy="135" r="8" fill="#06070b"/><circle cx="82.5" cy="132" r="2.5" fill="#F5F5F2"/><circle cx="112.5" cy="132" r="2.5" fill="#F5F5F2"/><ellipse cx="100" cy="166" rx="6" ry="7" fill="#06070b"/>
+  </g><path d="M40 83 Q41.08 90.92 49 92 Q41.08 93.08 40 101 Q38.92 93.08 31 92 Q38.92 90.92 40 83 Z" fill="#68A7FF"/><path d="M162 63 Q162.84 69.16 169 70 Q162.84 70.84 162 77 Q161.16 70.84 155 70 Q161.16 69.16 162 63 Z" fill="#68A7FF"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="902" y="628" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Surprised</text><text x="902" y="647" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">New results, big numbers</text><rect x="1140" y="420" width="240" height="240" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><g transform="translate(1170 428) scale(0.9)">
+  <g transform="translate(100 100) scale(0.72) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(-8 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    <path d="M77 122 L91 117" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M123 122 L109 117" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="79" y="128" width="11" height="20" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="128" width="11" height="20" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 168 Q100 160 110 168" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g><path d="M150 98 Q158 110 150 116 Q142 110 150 98 Z" fill="#68A7FF"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g><text x="1162" y="628" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="500" fill="#F5F5F2">Oops</text><text x="1162" y="647" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="12" fill="#F5F5F2" fill-opacity="0.5">Errors, 404, empty states</text><rect x="60" y="700" width="440" height="250" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><text x="88" y="736" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#F5F5F2" fill-opacity="0.55" letter-spacing="2">PALETTE</text><circle cx="110" cy="790" r="22" fill="#FF3C00" stroke="#F5F5F2" stroke-opacity="0"/><text x="142" y="788" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Body</text><text x="142" y="806" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#FF3C00</text><circle cx="240" cy="790" r="22" fill="#FF8A4C" stroke="#F5F5F2" stroke-opacity="0"/><text x="272" y="788" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Flame</text><text x="272" y="806" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#FF8A4C</text><circle cx="370" cy="790" r="22" fill="#FFC9A8" stroke="#F5F5F2" stroke-opacity="0"/><text x="402" y="788" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Core</text><text x="402" y="806" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#FFC9A8</text><circle cx="110" cy="880" r="22" fill="#C42E00" stroke="#F5F5F2" stroke-opacity="0"/><text x="142" y="878" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Shade</text><text x="142" y="896" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#C42E00</text><circle cx="240" cy="880" r="22" fill="#06070b" stroke="#F5F5F2" stroke-opacity="0.3"/><text x="272" y="878" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Ink</text><text x="272" y="896" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#06070b</text><circle cx="370" cy="880" r="22" fill="#68A7FF" stroke="#F5F5F2" stroke-opacity="0"/><text x="402" y="878" font-family="Space Grotesk, Inter, ui-sans-serif, system-ui, sans-serif" font-size="14" fill="#F5F5F2">Spark</text><text x="402" y="896" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">#68A7FF</text><rect x="520" y="700" width="440" height="250" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><text x="548" y="736" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#F5F5F2" fill-opacity="0.55" letter-spacing="2">MARK AT SIZE</text><svg x="552" y="770" width="112" height="112" viewBox="20 31 160 160">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></svg><text x="608" y="912" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">112</text><svg x="690" y="818" width="64" height="64" viewBox="20 31 160 160">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></svg><text x="722" y="912" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">64</text><svg x="780" y="842" width="40" height="40" viewBox="20 31 160 160">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></svg><text x="800" y="912" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">40</text><svg x="846" y="858" width="24" height="24" viewBox="20 31 160 160">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></svg><text x="858" y="912" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">24</text><svg x="896" y="866" width="16" height="16" viewBox="20 31 160 160">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(0 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="109" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="111" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M90 162 Q100 170 110 162" fill="none" stroke="#06070b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g></svg><text x="904" y="912" text-anchor="middle" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="11" fill="#F5F5F2" fill-opacity="0.5">16</text><rect x="980" y="700" width="400" height="250" rx="20" fill="#0D0F15" stroke="#F5F5F2" stroke-opacity="0.08"/><text x="1008" y="736" font-family="JetBrains Mono, ui-monospace, SFMono-Regular, monospace" font-size="12" fill="#F5F5F2" fill-opacity="0.55" letter-spacing="2">PIXEL · ON LIGHT</text><svg x="1010" y="762" width="120" height="150" viewBox="0 0 120 150" shape-rendering="crispEdges"><rect x="50" y="10" width="10" height="10" fill="#FFC9A8"/><rect x="50" y="20" width="10" height="10" fill="#FF8A4C"/><rect x="80" y="20" width="10" height="10" fill="#FFC9A8"/><rect x="40" y="30" width="20" height="10" fill="#FF8A4C"/><rect x="70" y="30" width="20" height="10" fill="#FF8A4C"/><rect x="30" y="40" width="70" height="10" fill="#FF8A4C"/><rect x="20" y="50" width="80" height="80" fill="#FF3C00"/><rect x="40" y="70" width="10" height="20" fill="#06070b"/><rect x="70" y="70" width="10" height="20" fill="#06070b"/><rect x="40" y="70" width="5" height="5" fill="#F5F5F2"/><rect x="70" y="70" width="5" height="5" fill="#F5F5F2"/><rect x="50" y="100" width="20" height="10" fill="#C42E00"/><rect x="10" y="80" width="10" height="20" fill="#FF3C00"/><rect x="100" y="80" width="10" height="20" fill="#FF3C00"/><rect x="30" y="130" width="10" height="10" fill="#FF3C00"/><rect x="50" y="130" width="10" height="10" fill="#FF3C00"/><rect x="70" y="130" width="10" height="10" fill="#FF3C00"/><rect x="80" y="130" width="10" height="10" fill="#FF3C00"/></svg><rect x="1160" y="756" width="196" height="170" rx="14" fill="#F5F5F2"/><g transform="translate(1183 758) scale(0.78)">
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g><rect x="43" y="138" width="12" height="26" rx="6" fill="#FF3C00" transform="rotate(14 49 138)"/><rect x="146" y="98" width="12" height="32" rx="6" fill="#FF3C00" transform="rotate(28 152 130)"/>
+  <g transform="rotate(-6 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="79" y="124" width="11" height="24" rx="5.5" fill="#06070b"/>
+  <rect x="81" y="126" width="4" height="7" rx="2" fill="#F5F5F2"/><path d="M106 136 Q114.5 126 123 136" fill="none" stroke="#06070b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M88 158 Q100 160 112 158 Q110 172 100 172 Q90 172 88 158 Z" fill="#06070b"/>
+  </g><path d="M170 84 Q180 94 176 108" fill="none" stroke="#68A7FF" stroke-width="3" stroke-linecap="round"/><path d="M180 74 Q194 90 188 112" fill="none" stroke="#68A7FF" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></g></svg>

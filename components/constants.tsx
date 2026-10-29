@@ -1,11 +1,16 @@
-import { Bot, Globe, Workflow } from "lucide-react";
+import { Globe, MousePointerClick, ScanSearch, Workflow } from "lucide-react";
 
 export type Service = {
   id: string;
+  /** The pipeline stage this service covers, from search to booked job. */
+  stage: string;
   title: string;
   description: string;
-  tags: string[];
+  deliverables: string[];
+  /** What the service is judged on. */
+  measure: string;
   icon: React.ReactNode;
+  flagship?: boolean;
 };
 
 export type WorkItem = {
@@ -16,34 +21,71 @@ export type WorkItem = {
   label: string;
   ratio: string;
   image: string;
-  /** Live site. Cards without one fall back to the contact anchor. */
+  /** Live site. Logos without one aren't links. */
   href?: string;
+  /** Logo image in /public. Without one, the title is shown as a wordmark. */
+  logo?: string;
+  /** Type styling for the wordmark, so each brand reads differently. */
+  wordmarkClass: string;
 };
 
 export const SERVICES: Service[] = [
   {
     id: "01",
-    title: "Lead Autopilot",
+    stage: "Get found",
+    title: "SEO & AEO",
     description:
-      "Every inquiry from your site, WhatsApp, or email gets an instant reply in your tone, is qualified, logged, and followed up. Live in 7 days.",
-    tags: ["Instant reply", "Qualify", "Follow-up", "Weekly report"],
-    icon: <Bot className="h-6 w-6" aria-hidden="true" />,
+      "Rank on Google, and get named when customers ask ChatGPT, Gemini or Perplexity who to hire.",
+    deliverables: [
+      "Technical and local SEO",
+      "Content that answers real questions",
+      "Structured answers AI assistants cite",
+    ],
+    measure: "Rankings, AI mentions, inquiries",
+    icon: <ScanSearch className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "02",
-    title: "Websites",
+    stage: "Get clicked",
+    title: "Google Ads",
     description:
-      "Fast, clean sites built to turn visitors into inquiries, with Lead Autopilot wired in from day one.",
-    tags: ["Next.js", "SEO", "Autopilot-ready"],
-    icon: <Globe className="h-6 w-6" aria-hidden="true" />,
+      "Search campaigns aimed at people ready to buy, tuned every week against booked jobs, not clicks.",
+    deliverables: [
+      "Keyword and competitor research",
+      "Ads matched to their landing page",
+      "Tracking all the way to the booking",
+    ],
+    measure: "Cost per booked job",
+    icon: <MousePointerClick className="h-6 w-6" aria-hidden="true" />,
   },
   {
     id: "03",
-    title: "Custom Automation",
+    stage: "Convert",
+    title: "Websites",
     description:
-      "Booking, invoicing, reporting, and other repetitive work handed to AI workflows that run without you.",
-    tags: ["Claude", "n8n", "Integrations"],
+      "Fast, clear sites that turn visitors into inquiries, with Lead Autopilot wired in from day one.",
+    deliverables: [
+      "Design and build in Next.js",
+      "Speed and SEO foundations",
+      "Lead Autopilot on every form",
+    ],
+    measure: "Visitor-to-inquiry rate",
+    icon: <Globe className="h-6 w-6" aria-hidden="true" />,
+  },
+  {
+    id: "04",
+    stage: "Book",
+    title: "Automations",
+    description:
+      "Lead Autopilot answers every inquiry in under a minute, qualifies it and books it. Custom workflows take the rest.",
+    deliverables: [
+      "Lead Autopilot on site, WhatsApp, email",
+      "Booking, invoicing and reporting flows",
+      "Built with Claude and n8n",
+    ],
+    measure: "Reply time, booked jobs",
     icon: <Workflow className="h-6 w-6" aria-hidden="true" />,
+    flagship: true,
   },
 ];
 
@@ -56,6 +98,7 @@ export const WORK: WorkItem[] = [
     label: "HOMEPAGE - ABOVE THE FOLD",
     ratio: "20 / 9",
     image: "/work/01-modoutfit.png",
+    wordmarkClass: "font-display text-2xl font-semibold uppercase tracking-[-0.03em]",
     href: "https://modoutfit.com/",
   },
   {
@@ -66,6 +109,7 @@ export const WORK: WorkItem[] = [
     label: "MOBILE - READING PRACTICE",
     ratio: "3 / 4",
     image: "/work/02-shikhi-ai.svg",
+    wordmarkClass: "font-display text-2xl font-semibold tracking-tight",
   },
   {
     id: "W.03",
@@ -75,6 +119,7 @@ export const WORK: WorkItem[] = [
     label: "HOMEPAGE - ABOVE THE FOLD",
     ratio: "16 / 10",
     image: "/work/03-woodtech.svg",
+    wordmarkClass: "font-serif text-3xl italic",
   },
   {
     id: "W.04",
@@ -84,6 +129,7 @@ export const WORK: WorkItem[] = [
     label: "HOMEPAGE - HERO + MODULES",
     ratio: "5 / 2",
     image: "/work/04-mysolusy.png",
+    wordmarkClass: "font-sans text-2xl font-bold lowercase tracking-tight",
     href: "https://www.mysolusy.com/",
   },
   {
@@ -94,6 +140,7 @@ export const WORK: WorkItem[] = [
     label: "EDITORIAL - ABOVE THE FOLD",
     ratio: "16 / 9",
     image: "/work/05-voiceforvoiceless.svg",
+    wordmarkClass: "font-serif text-2xl font-medium",
     href: "https://voiceforvoiceless24.com/",
   },
   {
@@ -104,6 +151,7 @@ export const WORK: WorkItem[] = [
     label: "MOBILE - VOCABULARY CARD",
     ratio: "3 / 4",
     image: "/work/06-english-vocab.svg",
+    wordmarkClass: "font-mono text-base uppercase tracking-[0.2em]",
   },
   {
     id: "W.07",
@@ -113,6 +161,7 @@ export const WORK: WorkItem[] = [
     label: "MOBILE - COMMUNITY ARCHIVE",
     ratio: "3 / 4",
     image: "/work/07-toponimia.svg",
+    wordmarkClass: "font-serif text-2xl italic",
   },
 ];
 

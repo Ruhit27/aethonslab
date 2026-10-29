@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Ember, building"><title>Ember, building</title>
+  <g transform="translate(100 100) scale(1) translate(-100 -100)">
+    <path d="M62 100 C64 80 72 72 76 60 C80 74 86 78 92 68 C96 56 100 48 102 36 C108 52 116 62 116 76 C122 70 126 66 130 58 C136 74 140 86 138 100 Z" fill="#FF8A4C"/>
+    <path d="M78 100 C80 88 86 82 90 74 C94 84 98 86 102 76 C106 84 112 90 114 100 Z" fill="#FFC9A8"/>
+  </g>
+  <g transform="rotate(-3 100 141)">
+    <rect x="55" y="96" width="90" height="90" rx="18" fill="#FF3C00"/>
+    <path d="M55 168 V168 Q55 186 73 186 H127 Q145 186 145 168 Z" fill="#C42E00" opacity="0.35"/>
+    
+  <rect x="80" y="128" width="11" height="15" rx="5.5" fill="#06070b"/>
+  <rect x="82" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  <rect x="110" y="128" width="11" height="15" rx="5.5" fill="#06070b"/>
+  <rect x="112" y="130" width="4" height="7" rx="2" fill="#F5F5F2"/>
+  </g><rect x="62" y="148" width="76" height="46" rx="8" fill="#06070b" stroke="#FF8A4C" stroke-width="2"/><polyline points="86,161 77,171 86,181" fill="none" stroke="#FF3C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><polyline points="114,161 123,171 114,181" fill="none" stroke="#FF3C00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><line x1="104" y1="159" x2="96" y2="183" stroke="#68A7FF" stroke-width="4" stroke-linecap="round"/><circle cx="61" cy="168" r="7" fill="#FF3C00"/><circle cx="139" cy="168" r="7" fill="#FF3C00"/>
+  <rect x="75" y="185" width="16" height="12" rx="5" fill="#FF3C00"/>
+  <rect x="111" y="183" width="16" height="12" rx="5" fill="#FF3C00"/></svg>

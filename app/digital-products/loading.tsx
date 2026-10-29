@@ -1,7 +1,10 @@
+import { Ember } from "@/components/mascot/Ember";
+
 export default function Loading() {
   return (
     <div className="mx-auto max-w-360 px-6 pb-24 pt-28 sm:px-8 lg:px-12">
       <div className="max-w-3xl space-y-5">
+        <Ember pose="thinking" walking className="h-14 w-14 overflow-visible" />
         <div className="h-3 w-40 animate-pulse rounded-full bg-white/10" />
         <div className="h-14 w-full animate-pulse rounded-2xl bg-white/[0.07]" />
         <div className="h-14 w-4/5 animate-pulse rounded-2xl bg-white/[0.07]" />

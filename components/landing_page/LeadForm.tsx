@@ -11,7 +11,7 @@ type Status =
   | { kind: "error"; message: string };
 
 const inputClass =
-  "w-full rounded-2xl border border-white/10 bg-white/4 px-4 py-3 text-base text-white placeholder:text-white/35 outline-none transition-colors focus:border-primary/60 focus:bg-white/6";
+  "w-full rounded-2xl border border-input bg-surface-1 px-4 py-3 text-base text-foreground placeholder:text-muted-foreground outline-none transition-colors focus:border-primary/60";
 
 export function LeadForm() {
   const [status, setStatus] = React.useState<Status>({ kind: "idle" });
@@ -51,50 +51,71 @@ export function LeadForm() {
     }
   }
 
-  if (status.kind === "replied") {
-    return (
-      <div className="rounded-4xl border border-white/10 bg-white/4 p-6 sm:p-8">
-        <div className="flex flex-wrap items-center justify-between gap-3 text-mono text-[11px] uppercase tracking-[0.24em] text-white/55">
-          <span className="inline-flex items-center gap-2 text-primary">
-            <Bot className="h-4 w-4" aria-hidden="true" /> Lead Autopilot
-          </span>
-          <span>Replied in {status.seconds}s</span>
-        </div>
-        <p className="mt-6 whitespace-pre-line text-lg leading-8 text-white/85">
-          {status.reply}
-        </p>
-        <Button
-          variant="outline"
-          size="sm"
-          className="mt-8 rounded-full border-white/12 bg-white/5 text-white hover:bg-white/10"
-          onClick={() => setStatus({ kind: "idle" })}
-        >
-          Send another message
-        </Button>
-      </div>
-    );
-  }
-
-  const sending = status.kind === "sending";
-
   return (
-    <form
-      onSubmit={onSubmit}
-      className="grid gap-4 rounded-4xl border border-white/10 bg-white/3 p-6 sm:grid-cols-2 sm:p-8"
-    >
-      <label className="grid gap-2 text-sm text-white/60">
+    <div className="relative">
+      {status.kind === "replied" ? (
+        <RepliedCard status={status} onReset={() => setStatus({ kind: "idle" })} />
+      ) : (
+        <form
+          onSubmit={onSubmit}
+          className="grid gap-4 rounded-3xl border border-border bg-surface-2 p-6 sm:grid-cols-2 sm:p-8"
+        >
+          <FormFields
+            sending={status.kind === "sending"}
+            error={status.kind === "error" ? status.message : null}
+          />
+        </form>
+      )}
+    </div>
+  );
+}
+
+function RepliedCard({
+  status,
+  onReset,
+}: {
+  status: Extract<Status, { kind: "replied" }>;
+  onReset: () => void;
+}) {
+  return (
+    <div className="rounded-3xl border border-border bg-surface-2 p-6 sm:p-8">
+      <div className="flex flex-wrap items-center justify-between gap-3 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
+        <span className="inline-flex items-center gap-2 text-indigo-400">
+          <Bot className="h-4 w-4" aria-hidden="true" /> Lead Autopilot
+        </span>
+        <span>Replied in {status.seconds}s</span>
+      </div>
+      <p className="mt-6 whitespace-pre-line text-lg leading-8 text-foreground/85">
+        {status.reply}
+      </p>
+      <Button
+        variant="outline"
+        size="sm"
+        className="mt-8"
+        onClick={onReset}
+      >
+        Send another message
+      </Button>
+    </div>
+  );
+}
+
+function FormFields({ sending, error }: { sending: boolean; error: string | null }) {
+  return (
+    <>
+      <label className="grid gap-2 text-sm text-muted-foreground">
         Name
         <input name="name" required maxLength={120} autoComplete="name" className={inputClass} placeholder="Your name" />
       </label>
-      <label className="grid gap-2 text-sm text-white/60">
+      <label className="grid gap-2 text-sm text-muted-foreground">
         Email
         <input name="email" type="email" required maxLength={200} autoComplete="email" className={inputClass} placeholder="you@business.com" />
       </label>
-      <label className="grid gap-2 text-sm text-white/60 sm:col-span-2">
+      <label className="grid gap-2 text-sm text-muted-foreground sm:col-span-2">
         Business (optional)
-        <input name="business" maxLength={200} autoComplete="organization" className={inputClass} placeholder="e.g. Dental clinic in Lisbon" />
+        <input name="business" maxLength={200} autoComplete="organization" className={inputClass} placeholder="e.g. 20-person logistics company" />
       </label>
-      <label className="grid gap-2 text-sm text-white/60 sm:col-span-2">
+      <label className="grid gap-2 text-sm text-muted-foreground sm:col-span-2">
         Message
         <textarea
           name="message"
@@ -102,7 +123,7 @@ export function LeadForm() {
           maxLength={3000}
           rows={4}
           className={inputClass}
-          placeholder="How do you handle customer inquiries today? What would you like automated?"
+          placeholder="Which task eats most of your team's week? What would you like automated?"
         />
       </label>
       {/* Honeypot for bots; hidden from people and screen readers. */}
@@ -113,21 +134,20 @@ export function LeadForm() {
           type="submit"
           size="lg"
           disabled={sending}
-          className="rounded-full bg-primary text-black hover:bg-primary/90"
         >
           {sending ? (
             <LoaderCircle className="h-4 w-4 animate-spin" aria-hidden="true" />
           ) : (
             <Send className="h-4 w-4" aria-hidden="true" />
           )}
-          {sending ? "Autopilot is replying..." : "Send and watch it reply"}
+          {sending ? "Our agent is replying..." : "Send and get an instant reply"}
         </Button>
-        {status.kind === "error" && (
+        {error && (
           <p role="alert" className="text-sm text-red-300">
-            {status.message}
+            {error}
           </p>
         )}
       </div>
-    </form>
+    </>
   );
 }

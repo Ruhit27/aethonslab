@@ -10,6 +10,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { HeroEmberWalk } from "./HeroEmberWalk";
 
 export function LandingHeroSection() {
   return (
@@ -24,21 +25,20 @@ export function LandingHeroSection() {
         <div className="space-y-8">
           <div className="reveal flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-4 font-mono text-[11px] uppercase tracking-[0.3em] text-white/55">
             <span>[ 01 / Aethon Lab ]</span>
-            <span>Lisbon - Remote</span>
+            <span>Seri Kembangan, Kuala Lumpur</span>
           </div>
 
           <div className="space-y-6">
             <h1 className="reveal text-display max-w-5xl text-[clamp(3.75rem,7vw,7.8rem)] font-medium leading-[0.88] tracking-tighter text-white">
-              Every lead answered.
+              We do not just build.
               <br />
-              In under a minute.
+              We think first.
             </h1>
 
             <p className="reveal max-w-2xl text-lg leading-8 text-white/68 sm:text-xl">
-              Lead Autopilot replies to every inquiry on your website, WhatsApp,
-              and email instantly, in your tone. It qualifies the lead, books
-              the call, and follows up so you never lose a customer to a slow
-              reply.
+              A strategy-first studio that builds websites and custom
+              automations, and runs Google Ads, SEO and AEO for businesses
+              that want precision over noise.
             </p>
           </div>
 
@@ -68,11 +68,14 @@ export function LandingHeroSection() {
             </Button>
           </div>
 
-          <div className="reveal flex flex-wrap gap-3 border-t border-dashed border-white/10 pt-4 font-mono text-[11px] uppercase tracking-[0.24em] text-white/55">
+          <div
+            data-ember="floor"
+            className="reveal mt-6 flex flex-wrap gap-3 border-t border-dashed border-white/10 pt-4 font-mono text-[11px] uppercase tracking-[0.24em] text-white/55"
+          >
             <span className="text-primary">Pilot program</span>
-            <span>Live in 7 days</span>
-            <span>Works with your existing site</span>
-            <span>Limited pilot spots</span>
+            <span data-ember="word">Live in 7 days</span>
+            <span data-ember="word">Works with your existing site</span>
+            <span data-ember="word">Limited pilot spots</span>
           </div>
         </div>
 
@@ -108,7 +111,8 @@ export function LandingHeroSection() {
             ].map(([time, label]) => (
               <div
                 key={time}
-                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/3 p-4"
+                data-ember="step"
+                className="flex items-center gap-4 rounded-2xl border border-white/10 bg-white/3 p-4 pr-14 transition-[border-color,background-color,box-shadow] duration-500 lg:pr-18"
               >
                 <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-primary">
                   {time}
@@ -117,12 +121,17 @@ export function LandingHeroSection() {
               </div>
             ))}
 
-            <div className="rounded-2xl border border-white/10 bg-black/20 p-4 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55">
+            <div
+              data-ember="step"
+              className="rounded-2xl border border-white/10 bg-black/20 p-4 pr-14 font-mono text-[11px] uppercase tracking-[0.22em] text-white/55 transition-[border-color,background-color,box-shadow] duration-500 lg:pr-18"
+            >
               Want to see it live? Use the form below.
             </div>
           </CardContent>
         </Card>
       </div>
+
+      <HeroEmberWalk />
     </section>
   );
 }

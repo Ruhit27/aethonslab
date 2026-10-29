@@ -1,21 +1,76 @@
 @import "tailwindcss";
 
+/* Dark mode follows a `dark` class (set by ThemeToggle), not the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light theme (default) */
 :root {
-  --background: #06070b;
-  --foreground: #f5f5f2;
-  --card: rgba(255, 255, 255, 0.04);
-  --card-foreground: #f5f5f2;
-  --muted: rgba(245, 245, 242, 0.08);
-  --muted-foreground: rgba(245, 245, 242, 0.62);
-  --border: rgba(245, 245, 242, 0.1);
-  --input: rgba(245, 245, 242, 0.1);
-  --primary: rgb(255, 60, 0);
+  --background: #f8f5f6;
+  --foreground: #201d25;
+  --card: #ffffff;
+  --card-foreground: #1a1523;
+  --popover: #ffffff;
+  --muted: #f0edee;
+  --muted-foreground: #6b5e72;
+  --secondary: #f4f1f2;
+  --secondary-foreground: #201d25;
+  --accent: #f0edee;
+  --accent-foreground: #1a1523;
+  --border: #e9e5e8;
+  --border-strong: #e9e5e8;
+  --border-subtle: #f0edee;
+  --input: #f0edee;
+  --ring: #8082c1;
+  --destructive: #ef4444;
+  --text-muted: #6b5e72;
+  --text-soft: #8b7d92;
+  --primary: #8082c1;
   --primary-foreground: #ffffff;
-  --secondary: rgba(255, 255, 255, 0.08);
-  --secondary-foreground: #f5f5f2;
-  --accent: rgba(255, 255, 255, 0.08);
-  --accent-foreground: #f5f5f2;
-  --ring: rgba(255, 60, 0, 0.45);
+  --primary-purple: #8082c1;
+  --primary-50: #f3f4ff;
+  --primary-100: #e4e6ff;
+  --primary-200: #d3d5fe;
+  --primary-300: #c7c9f8;
+  --primary-400: #b3b7f6;
+  --primary-500: #8082c1;
+  --primary-600: #7f84d0;
+  --primary-700: #5b5f9d;
+  --primary-800: #3b3f66;
+  --primary-900: #23243b;
+  --accent-400: #8183ff;
+  --accent-500: #6366ff;
+  --accent-600: #4b4df2;
+  --gold-400: #facc15;
+  --gold-500: #fbbf24;
+  --gold-600: #f59e0b;
+  --gold-700: #d97706;
+  --hero-dot-color: #201d2547;
+  --hero-grid-color: #201d251f;
+}
+
+.dark {
+  --background: #0f0f15;
+  --foreground: #f0edee;
+  --card: #1d1d29;
+  --card-foreground: #f0edee;
+  --popover: #1d1d29;
+  --muted: #1a1525;
+  --muted-foreground: #a89db0;
+  --secondary: #1a1525;
+  --secondary-foreground: #f0edee;
+  --accent: #1a1525;
+  --accent-foreground: #f0edee;
+  --border: #ffffff14;
+  --border-strong: #352a42;
+  --border-subtle: #251d30;
+  --input: #ffffff1f;
+  --text-muted: #a89db0;
+  --text-soft: #7a6f80;
+  --primary: #8b5cf6;
+  --primary-500: #9fa3f3;
+  --hero-dot-color: #f0edee4d;
+  --hero-grid-color: #f0edee24;
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -23,72 +78,105 @@
   --color-foreground: var(--foreground);
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
-  --color-border: var(--border);
-  --color-input: var(--input);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-border-subtle: var(--border-subtle);
+  --color-input: var(--input);
   --color-ring: var(--ring);
+  --color-destructive: var(--destructive);
+  --color-text-muted: var(--text-muted);
+  --color-text-soft: var(--text-soft);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-purple: var(--primary-purple);
+  --color-primary-50: var(--primary-50);
+  --color-primary-100: var(--primary-100);
+  --color-primary-200: var(--primary-200);
+  --color-primary-300: var(--primary-300);
+  --color-primary-400: var(--primary-400);
+  --color-primary-500: var(--primary-500);
+  --color-primary-600: var(--primary-600);
+  --color-primary-700: var(--primary-700);
+  --color-primary-800: var(--primary-800);
+  --color-primary-900: var(--primary-900);
+  --color-accent-400: var(--accent-400);
+  --color-accent-500: var(--accent-500);
+  --color-accent-600: var(--accent-600);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono-family);
+  --animate-infinite-scroll: infinite-scroll 40s linear infinite;
+  --animate-marquee: infinite-scroll 35s linear infinite;
+  --animate-beam-v: beamV 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  --animate-grid-scroll: grid-scroll 4s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-delayed: float 6s ease-in-out 3s infinite;
 }
 
-* {
-  box-sizing: border-box;
-}
+/* Element defaults live in the base layer so Tailwind utilities can override them. */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  background: var(--background);
-}
+  html {
+    background: var(--background);
+  }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  overflow-x: hidden;
-  background:
-    radial-gradient(
-      circle at top left,
-      rgba(255, 60, 0, 0.08),
-      transparent 28%
-    ),
-    radial-gradient(
-      circle at 80% 18%,
-      rgba(104, 167, 255, 0.1),
-      transparent 24%
-    ),
-    linear-gradient(180deg, #090b10 0%, #06070b 100%);
-  color: var(--foreground);
-  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 500ms, color 500ms;
+  }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  h2 {
+    letter-spacing: -0.02em;
+  }
 
-button,
-input,
-textarea,
-select {
-  font: inherit;
-}
+  h3,
+  h4 {
+    letter-spacing: -0.01em;
+  }
 
-::selection {
-  background: var(--primary);
-  color: var(--primary-foreground);
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    background: var(--primary-purple);
+    color: #fff;
+  }
 }
 
 .page-shell {
   position: relative;
 }
 
+/* Scroll-in fade-up (RevealOnScrollProvider adds .in). */
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -102,6 +190,7 @@ select {
   transform: translateY(0);
 }
 
+/* Kept for pages outside the homepage. */
 .text-display {
   font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.04em;
@@ -116,23 +205,267 @@ select {
   backdrop-filter: blur(5px) saturate(140%);
 }
 
-.marquee-track {
-  animation: marquee 28s linear infinite;
+.no-scrollbar {
+  scrollbar-width: none;
 }
 
-@keyframes marquee {
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Logo marquees: duplicate the content once and slide by half. */
+.marquee-track {
+  animation: infinite-scroll 28s linear infinite;
+}
+
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track,
+.animate-infinite-scroll:hover {
+  animation-play-state: paused;
+}
+
+@keyframes infinite-scroll {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes beamV {
+  0% {
+    top: -150px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes grid-scroll {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 40px;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.caret {
+  animation: blink 1s steps(1) infinite;
+}
+
+/* Brand-coloured tool logo from a single-colour SVG in /public/logos. */
+.tool-logo {
+  display: inline-block;
+  background-color: var(--logo-color, currentColor);
+  -webkit-mask: var(--logo-url) center / contain no-repeat;
+  mask: var(--logo-url) center / contain no-repeat;
+}
+
+.dark .tool-logo[data-dark-invert] {
+  background-color: #f0edee;
+}
+
+/* Ember, the mascot (components/mascot/Ember.tsx). --ember-speed matches
+   EMBER_SPEED in components/mascot/motion.ts; the flame flicker and wave
+   are idle loops and keep their own pace. */
+:root {
+  --ember-speed: 2;
+}
+
+.ember-flicker {
+  transform-box: view-box;
+  transform-origin: 100px 100px;
+  animation: ember-flicker 0.9s ease-in-out infinite;
+}
+
+.ember-wave-arm {
+  transform-box: view-box;
+  transform-origin: 152px 130px;
+  animation: ember-wave 0.9s ease-in-out infinite;
+}
+
+.ember-walking {
+  animation: ember-bob calc(0.36s / var(--ember-speed)) ease-in-out infinite;
+}
+
+.ember-walking .ember-foot-l,
+.ember-walking .ember-foot-r {
+  animation: ember-step calc(0.36s / var(--ember-speed)) ease-in-out infinite;
+}
+
+.ember-walking .ember-foot-r {
+  animation-delay: calc(0.18s / var(--ember-speed));
+}
+
+.ember-trail {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 2px;
+  background: var(--primary);
+  pointer-events: none;
+  animation: ember-trail 650ms ease-out forwards;
+}
+
+.ember-lit {
+  color: var(--primary);
+  text-shadow: 0 0 14px rgba(255, 60, 0, 0.55);
+  transition:
+    color 300ms ease,
+    text-shadow 300ms ease;
+}
+
+.ember-step-active {
+  border-color: rgba(255, 60, 0, 0.55);
+  background-color: rgba(255, 60, 0, 0.08);
+  box-shadow: 0 0 28px rgba(255, 60, 0, 0.16);
+}
+
+.service-lit {
+  background-color: #110d0c;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 60, 0, 0.35),
+    inset 0 -120px 140px -90px rgba(255, 60, 0, 0.22);
+}
+
+/* A list row Ember has checked off (EmberRail) */
+.rail-lit {
+  color: rgba(245, 245, 242, 0.92);
+}
+
+.rail-lit > svg {
+  color: var(--primary);
+  animation: rail-pop calc(420ms / var(--ember-speed)) cubic-bezier(0.3, 1.6, 0.5, 1);
+}
+
+@keyframes rail-pop {
+  from {
+    transform: scale(0.4);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes ember-hop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-12px);
+  }
+}
+
+.ember-hop {
+  animation: ember-hop calc(420ms / var(--ember-speed)) cubic-bezier(0.3, 1.4, 0.5, 1);
+}
+
+.ember-step-done {
+  border-color: rgba(255, 60, 0, 0.25);
+}
+
+@keyframes ember-flicker {
+  0%,
+  100% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.95, 1.07);
+  }
+}
+
+@keyframes ember-wave {
+  0%,
+  100% {
+    transform: rotate(28deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes ember-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-4px) rotate(3deg);
+  }
+}
+
+@keyframes ember-step {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes ember-trail {
+  from {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.3);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .ember-flicker,
+  .ember-wave-arm,
+  .ember-hop,
+  .ember-walking,
+  .ember-walking .ember-foot-l,
+  .ember-walking .ember-foot-r {
+    animation: none;
+  }
+
+  .caret,
+  .animate-infinite-scroll,
+  .animate-marquee,
+  .animate-beam-v,
+  .animate-grid-scroll,
+  .animate-float,
+  .animate-float-delayed,
+  .animate-ping,
+  .animate-pulse {
+    animation: none;
   }
 
   .reveal,
@@ -152,21 +485,21 @@ select {
 
 /* track (background) */
 ::-webkit-scrollbar-track {
-  background: #0a0f1a;
+  background: var(--surface-0);
 }
 
 /* thumb (draggable part) */
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 60, 0);
+  background: var(--primary);
   border-radius: 4px;
 }
 
 /* thumb hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00bbcc;
+  background: var(--indigo-400);
 }
 /* firefox scrollbar styles */
 * {
   scrollbar-width: thin; /* auto | thin | none */
-  scrollbar-color: rgb(255, 60, 0) #0a0f1a; /* thumb track */
+  scrollbar-color: var(--primary) var(--surface-0); /* thumb track */
 }

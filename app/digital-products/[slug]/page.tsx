@@ -149,7 +149,7 @@ export default async function DigitalProductPage({ params }: PageProps) {
 
                 <Button
                   size="lg"
-                  className="w-full rounded-full bg-primary text-black hover:bg-primary/90"
+                  className="w-full rounded-full bg-primary text-white hover:bg-primary/90"
                 >
                   <Download className="h-4 w-4" aria-hidden="true" />
                   Buy and download

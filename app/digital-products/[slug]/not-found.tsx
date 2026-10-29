@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MarketplaceHeader } from "@/components/digital_products/MarketplaceHeader";
+import { Ember } from "@/components/mascot/Ember";
 
 export default function ProductNotFound() {
   return (
@@ -8,7 +9,8 @@ export default function ProductNotFound() {
       <MarketplaceHeader />
 
       <main className="mx-auto flex max-w-360 flex-col items-start px-6 py-32 sm:px-8 lg:px-12">
-        <span className="text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
+        <Ember pose="oops" className="h-24 w-24 overflow-visible" />
+        <span className="mt-6 text-mono text-[11px] uppercase tracking-[0.24em] text-white/45">
           404
         </span>
         <h1 className="mt-5 max-w-2xl text-display text-[clamp(2.5rem,5vw,4rem)] font-medium leading-[1.02] tracking-tighter text-white">

@@ -150,7 +150,7 @@ async function appendToSheet(lead: Lead, result: Qualification | null) {
   // "2026-10-26 16:59:20" in the sheet's time zone, which Sheets reads as a
   // real date and shows with the column's date format.
   const receivedAt = new Intl.DateTimeFormat("sv-SE", {
-    timeZone: process.env.LEADS_TIMEZONE || "Asia/Dhaka",
+    timeZone: process.env.LEADS_TIMEZONE || "Asia/Kuala_Lumpur",
     dateStyle: "short",
     timeStyle: "medium",
   }).format(new Date());

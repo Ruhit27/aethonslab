@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
@@ -25,7 +26,7 @@ export function MarketplaceHeader() {
           href="/"
           className="flex items-center gap-3 text-display text-lg font-medium tracking-tight text-white"
         >
-          <span className="h-2.5 w-2.5 rounded-sm bg-primary shadow-[0_0_16px_rgba(255,60,0,.55)]" />
+          <Image src="/mascot/ember-mark.svg" alt="" width={28} height={28} priority />
           Aethon Lab
         </Link>
 

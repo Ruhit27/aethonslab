@@ -1,26 +1,32 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Space_Grotesk } from "next/font/google";
+import { IBM_Plex_Mono, Lexend } from "next/font/google";
 import "./globals.css";
 
-const displayFont = Space_Grotesk({
-  variable: "--font-display",
-  subsets: ["latin"],
-});
-
-const bodyFont = Inter({
+// Lexend is used for body and headings alike; --font-display keeps the older
+// pages' `.text-display` class working.
+const bodyFont = Lexend({
   variable: "--font-body",
   subsets: ["latin"],
 });
 
-const monoFont = JetBrains_Mono({
-  variable: "--font-mono-family",
+const displayFont = Lexend({
+  variable: "--font-display",
   subsets: ["latin"],
 });
 
+const monoFont = IBM_Plex_Mono({
+  variable: "--font-mono-family",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
+
+// Applies the saved theme before first paint, so dark mode never flashes light.
+const themeScript = `try{if(localStorage.getItem("theme")==="dark")document.documentElement.classList.add("dark")}catch(e){}`;
+
 export const metadata: Metadata = {
-  title: "Aethon Lab | Strategy-first digital studio",
+  title: "Aethon Lab | AI automation agency",
   description:
-    "A Next.js, React, Tailwind, and shadcn-style landing page built from the Aethon Lab prototype.",
+    "Aethon Lab designs, builds and runs AI agents and automations that take repetitive work off your team.",
 };
 
 export default function RootLayout({
@@ -31,8 +37,12 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${displayFont.variable} ${bodyFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
+      suppressHydrationWarning
+      className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className="min-h-full bg-background text-foreground">
         {children}
       </body>
