@@ -1,6 +1,4 @@
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight, Bot } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { MoatTyping } from "./MoatTyping";
 import { btn, Kicker, PixelScene, Purple, ToolLogo } from "./kit";
 import { BOOK_HREF, BUILDS, HERO_ART, MID_CTA, MODEL, MODEL_KICKER, STACK, STACK_HEADER, TOOLS } from "./content";
@@ -57,66 +55,41 @@ function BuildCards() {
     <div id="work" className="scroll-mt-24">
       <SplitHeader kicker={BUILDS.kicker} title={BUILDS.title} accent={BUILDS.accent} summary={BUILDS.summary} />
       <div className="mb-20 grid grid-cols-1 gap-5 md:grid-cols-3">
-        {BUILDS.items.map((item) => {
-          const external = item.href.startsWith("http");
-          return (
-            <Link
-              key={item.title}
-              href={item.href}
-              {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              className="reveal group relative overflow-hidden border border-border-strong bg-card transition-all duration-300 hover:border-primary-purple/40"
-            >
-              <div className="flex items-center gap-2 border-b border-border-subtle px-3.5 py-2.5">
-                <span className="size-2 rounded-full bg-red-500/70" />
-                <span className="size-2 rounded-full bg-yellow-500/70" />
-                <span className="size-2 rounded-full bg-green-500/70" />
-                <span className="ml-2 truncate font-mono text-[10px] tracking-tight text-text-soft">{item.url}</span>
-                <span className="ml-auto flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-text-soft">
-                  <span className="relative flex h-1.5 w-1.5">
-                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-60" />
-                    <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-500" />
-                  </span>
-                  Live
+        {BUILDS.items.map((item) => (
+          <a
+            key={item.title}
+            href="#services"
+            className="reveal group relative overflow-hidden border border-border-strong bg-card transition-all duration-300 hover:border-primary-purple/40"
+          >
+            <div className="flex items-center gap-2 border-b border-border-subtle px-3.5 py-2.5">
+              <span className="size-2 rounded-full bg-red-500/70" />
+              <span className="size-2 rounded-full bg-yellow-500/70" />
+              <span className="size-2 rounded-full bg-green-500/70" />
+              <span className="ml-2 truncate font-mono text-[10px] tracking-tight text-text-soft">{item.url}</span>
+              <span className="ml-auto flex items-center gap-1.5 text-[10px] uppercase tracking-widest text-text-soft">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-60" />
+                  <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-green-500" />
                 </span>
-              </div>
-              <div className="relative aspect-4/3 overflow-hidden bg-muted">
-                {item.image ? (
-                  <Image
-                    src={item.image}
-                    alt=""
-                    fill
-                    sizes="(min-width: 768px) 33vw, 100vw"
-                    className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
-                  />
-                ) : (
-                  <ChatMock />
-                )}
-              </div>
-              <p className="p-4 text-sm font-semibold leading-snug">{item.title}</p>
-            </Link>
-          );
-        })}
+                Live
+              </span>
+            </div>
+            <div className="relative aspect-4/3 overflow-hidden bg-black">
+              <video
+                src={item.video}
+                autoPlay
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                aria-hidden="true"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+            </div>
+            <p className="p-4 text-sm font-semibold leading-snug">{item.title}</p>
+          </a>
+        ))}
       </div>
-    </div>
-  );
-}
-
-/** Little Lead Autopilot conversation, standing in for a screen recording. */
-function ChatMock() {
-  return (
-    <div className="absolute inset-0 flex flex-col justify-end gap-2 bg-linear-to-b from-primary-50 to-primary-100 p-4 dark:from-primary-900 dark:to-primary-800">
-      <p className="max-w-[80%] self-end bg-primary-purple px-3 py-2 text-xs text-white">
-        Hi! Do you have a slot for a cleaning this Friday?
-      </p>
-      <div className="flex max-w-[85%] items-end gap-2">
-        <span className="flex h-6 w-6 shrink-0 items-center justify-center bg-card text-primary-purple">
-          <Bot className="h-3.5 w-3.5" aria-hidden="true" />
-        </span>
-        <p className="bg-card px-3 py-2 text-xs text-foreground shadow-sm">
-          Yes, 10:30 or 3:00 are free. Shall I book 10:30 for you?
-        </p>
-      </div>
-      <p className="self-center font-mono text-[10px] text-text-soft">replied in 38s · lead scored hot</p>
     </div>
   );
 }

@@ -351,9 +351,9 @@ export const BUILDS = {
   accent: "weeks, not slide decks.",
   summary: "Real engineers, real agents, real systems shipped into production. Here are three running right now.",
   items: [
-    { title: "Lead Autopilot answering inquiries in under a minute", url: "aethonlab.studio/demo", href: "/demo", image: null },
-    { title: "MySolusy business suite, live for daily operations", url: "mysolusy.com", href: "https://www.mysolusy.com/", image: "/work/04-mysolusy.png" },
-    { title: "ModOutfit storefront with automated order flow", url: "modoutfit.com", href: "https://modoutfit.com/", image: "/work/01-modoutfit.png" },
+    { title: "Claude agents writing and shipping code", url: "aethonlab.studio/agents", video: "/videos/claude.webm" },
+    { title: "n8n workflows running around the clock", url: "aethonlab.studio/n8n", video: "/videos/n8n.webm" },
+    { title: "Make scenarios connecting your whole stack", url: "aethonlab.studio/make", video: "/videos/make.webm" },
   ],
 };
 
