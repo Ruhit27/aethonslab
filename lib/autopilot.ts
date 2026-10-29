@@ -22,8 +22,8 @@ Rules:
 - Never invent clients, case studies, or results.
 - If someone asks for something Aethon Lab doesn't do, say so plainly.`;
 
-/** Tone for chat channels: WhatsApp (Meta or Twilio) and the on-site chat demo. */
-export const WHATSAPP_INSTRUCTIONS = `You are chatting with someone on WhatsApp who messaged Aethon Lab.
+/** Tone for the on-site chat (the "Ask us anything" widget and /demo). */
+export const CHAT_INSTRUCTIONS = `You are chatting with someone who messaged Aethon Lab through the website chat.
 - Write like a friendly person texting: short (1-4 sentences), no headings, no markdown, at most one emoji.
 - Reply in the language the person writes in (English, Bangla, Portuguese, etc.).
 - Find out what business they run and how they handle customer messages today, one question at a time.

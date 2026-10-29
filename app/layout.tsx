@@ -2,15 +2,9 @@ import type { Metadata } from "next";
 import { IBM_Plex_Mono, Lexend } from "next/font/google";
 import "./globals.css";
 
-// Lexend is used for body and headings alike; --font-display keeps the older
-// pages' `.text-display` class working.
+// Lexend is used for body and headings alike.
 const bodyFont = Lexend({
   variable: "--font-body",
-  subsets: ["latin"],
-});
-
-const displayFont = Lexend({
-  variable: "--font-display",
   subsets: ["latin"],
 });
 
@@ -38,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${bodyFont.variable} ${displayFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
+      className={`${bodyFont.variable} ${monoFont.variable} h-full scroll-smooth antialiased`}
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />

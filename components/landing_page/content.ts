@@ -7,7 +7,6 @@
  * replaced, so nothing made-up ships as if it were real.
  */
 import {
-  BookOpen,
   Bot,
   Code2,
   Compass,
@@ -22,7 +21,6 @@ import {
   PlayCircle,
   Rocket,
   ShieldCheck,
-  ShoppingBag,
   UserPlus,
   Users,
   Workflow,
@@ -125,24 +123,16 @@ export const SERVICE_GROUPS: ServiceGroup[] = [
   },
 ];
 
-export const RESOURCE_LINKS = [
-  { href: "/demo", title: "Live agent demo", blurb: "Talk to Lead Autopilot right now." },
-  { href: "/digital-products/blogs", title: "Blog", blurb: "Teardowns, guides and build notes." },
-  { href: "/digital-products", title: "Digital products", blurb: "Templates and kits we use ourselves." },
-];
-
 export const RESOURCE_GROUPS = [
   {
     name: "Learn",
     items: [
-      { href: "/digital-products/blogs", title: "Blog", blurb: "Teardowns, guides and build notes.", icon: BookOpen },
       { href: "/demo", title: "Live agent demo", blurb: "Talk to Lead Autopilot right now.", icon: PlayCircle },
     ],
   },
   {
     name: "Explore",
     items: [
-      { href: "/digital-products", title: "Digital products", blurb: "Templates and kits we use ourselves.", icon: ShoppingBag },
       { href: "#work", title: "Our builds", blurb: "Live systems we've shipped.", icon: Code2 },
       { href: "#team", title: "Team", blurb: "The people behind the agents.", icon: Users },
       { href: "#faq", title: "FAQ", blurb: "Pricing, security, timelines.", icon: MessageSquareText },
@@ -191,7 +181,7 @@ export const START_HERE_LABEL = "Start here";
 export const START_HERE = [
   { href: "/demo", kicker: "Try it", title: "Watch an agent work live", body: "Chat with the same Lead Autopilot our clients run." },
   { href: "#work", kicker: "Proof", title: "See what we've shipped", body: "Live builds, not concept shots." },
-  { href: "/digital-products/blogs", kicker: "Learn", title: "Read the build notes", body: "How we design, test and run automations." },
+  { href: "#services", kicker: "Explore", title: "See what we automate", body: "Five ways we take work off your team's plate." },
 ];
 
 /* ---------- 3. Teardowns signup ---------- */
@@ -217,6 +207,100 @@ export const TERMINAL = {
 } as const;
 
 /* ---------- 5. Proof: stats (logos come from WORK in components/constants.tsx) ---------- */
+
+/* Past projects, shown as the logo wall. */
+
+export type WorkItem = {
+  id: string;
+  title: string;
+  category: string;
+  year: string;
+  label: string;
+  ratio: string;
+  image: string;
+  /** Live site. Logos without one aren't links. */
+  href?: string;
+  /** Logo image in /public. Without one, the title is shown as a wordmark. */
+  logo?: string;
+  /** Type styling for the wordmark, so each brand reads differently. */
+  wordmarkClass: string;
+};
+
+export const WORK: WorkItem[] = [
+  {
+    id: "W.01",
+    title: "ModOutfit",
+    category: "E-Commerce - Custom Apparel Platform",
+    year: "2025",
+    label: "HOMEPAGE - ABOVE THE FOLD",
+    ratio: "20 / 9",
+    image: "/work/01-modoutfit.png",
+    wordmarkClass: "font-sans text-2xl font-semibold uppercase tracking-[-0.03em]",
+    href: "https://modoutfit.com/",
+  },
+  {
+    id: "W.02",
+    title: "Shikhi AI",
+    category: "EdTech - AI Tutor Mobile App",
+    year: "2025",
+    label: "MOBILE - READING PRACTICE",
+    ratio: "3 / 4",
+    image: "/work/02-shikhi-ai.svg",
+    wordmarkClass: "font-sans text-2xl font-semibold tracking-tight",
+  },
+  {
+    id: "W.03",
+    title: "Woodtech",
+    category: "Manufacturing - Plywood & Wood Craft",
+    year: "2025",
+    label: "HOMEPAGE - ABOVE THE FOLD",
+    ratio: "16 / 10",
+    image: "/work/03-woodtech.svg",
+    wordmarkClass: "font-serif text-3xl italic",
+  },
+  {
+    id: "W.04",
+    title: "MySolusy",
+    category: "SaaS - Business Management Suite",
+    year: "2025",
+    label: "HOMEPAGE - HERO + MODULES",
+    ratio: "5 / 2",
+    image: "/work/04-mysolusy.png",
+    wordmarkClass: "font-sans text-2xl font-bold lowercase tracking-tight",
+    href: "https://www.mysolusy.com/",
+  },
+  {
+    id: "W.05",
+    title: "Voice for Voiceless 24",
+    category: "Media - Publishing Platform",
+    year: "2025",
+    label: "EDITORIAL - ABOVE THE FOLD",
+    ratio: "16 / 9",
+    image: "/work/05-voiceforvoiceless.svg",
+    wordmarkClass: "font-serif text-2xl font-medium",
+    href: "https://voiceforvoiceless24.com/",
+  },
+  {
+    id: "W.06",
+    title: "English Vocabulary",
+    category: "EdTech - Arabic-Speaking Learners",
+    year: "2025",
+    label: "MOBILE - VOCABULARY CARD",
+    ratio: "3 / 4",
+    image: "/work/06-english-vocab.svg",
+    wordmarkClass: "font-mono text-base uppercase tracking-[0.2em]",
+  },
+  {
+    id: "W.07",
+    title: "Toponimia Andalûh",
+    category: "Culture - Community Mobile App",
+    year: "2025",
+    label: "MOBILE - COMMUNITY ARCHIVE",
+    ratio: "3 / 4",
+    image: "/work/07-toponimia.svg",
+    wordmarkClass: "font-serif text-2xl italic",
+  },
+];
 
 export const PARTNERS = {
   eyebrow: "Trusted partners",
@@ -625,3 +709,11 @@ export const FOOTER = {
     { href: BOOK_HREF, label: "Book a call" },
   ],
 };
+
+/* ---------- Contact ---------- */
+
+/** International format, digits only (Bangladesh +880). Used for wa.me links. */
+export const WHATSAPP_NUMBER = "8801743001963";
+export const WHATSAPP_GREETING =
+  "Hi Aethon Lab! I'd like to know more about Lead Autopilot.";
+export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_GREETING)}`;

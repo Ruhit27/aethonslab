@@ -1,7 +1,6 @@
 import { Plus } from "lucide-react";
-import { WORK } from "../constants";
 import { Container, GridOverlay, Section, SectionHeader } from "./kit";
-import { BOOK_HREF, PARTNERS, STATS } from "./content";
+import { BOOK_HREF, PARTNERS, STATS, WORK } from "./content";
 
 const tileClass =
   "group relative flex min-h-24 items-center justify-center overflow-hidden border border-border bg-card px-4 py-4 transition-all duration-300 hover:border-primary-purple/50 hover:bg-muted/50 sm:min-h-28 sm:px-6 sm:py-5 md:min-h-32";

@@ -2,8 +2,7 @@
 
 import * as React from "react";
 import Link from "next/link";
-import { ArrowLeft, Check, CheckCheck, Send } from "lucide-react";
-import { Ember } from "@/components/mascot/Ember";
+import { ArrowLeft, Bot, Check, CheckCheck, Send } from "lucide-react";
 
 type Message = { role: "user" | "assistant"; content: string; time: string };
 
@@ -88,13 +87,8 @@ export function DemoChat({
       className={`flex w-full flex-col overflow-hidden rounded-3xl border border-white/10 bg-[#0b141a] text-white shadow-2xl ${className}`}
     >
       <header className="flex items-center gap-3 bg-[#202c33] px-4 py-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#06070b] ring-1 ring-[#25D366]/50">
-          {/* Ember gets to work while the reply is being written. */}
-          <Ember
-            pose={typing ? "building" : "idle"}
-            walking={typing}
-            className="mt-0.5 h-8 w-8 overflow-visible"
-          />
+        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#8082c1] text-white ring-1 ring-[#25D366]/50">
+          <Bot className={`h-5 w-5 ${typing ? "animate-pulse" : ""}`} aria-hidden="true" />
         </div>
         <div className="min-w-0">
           <div className="truncate font-medium">Aethon Lab</div>

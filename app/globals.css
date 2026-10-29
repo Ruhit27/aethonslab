@@ -190,36 +190,7 @@
   transform: translateY(0);
 }
 
-/* Kept for pages outside the homepage. */
-.text-display {
-  font-family: var(--font-display), ui-sans-serif, system-ui, sans-serif;
-  letter-spacing: -0.04em;
-}
-
-.text-mono {
-  font-family: var(--font-mono-family), ui-monospace, SFMono-Regular, monospace;
-}
-
-.glass-panel {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(5px) saturate(140%);
-}
-
-.no-scrollbar {
-  scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Logo marquees: duplicate the content once and slide by half. */
-.marquee-track {
-  animation: infinite-scroll 28s linear infinite;
-}
-
-.marquee:hover .marquee-track,
-.marquee:focus-within .marquee-track,
+/* Marquees pause on hover. The track holds two copies and slides by half. */
 .animate-infinite-scroll:hover {
   animation-play-state: paused;
 }
@@ -291,169 +262,9 @@
   background-color: #f0edee;
 }
 
-/* Ember, the mascot (components/mascot/Ember.tsx). --ember-speed matches
-   EMBER_SPEED in components/mascot/motion.ts; the flame flicker and wave
-   are idle loops and keep their own pace. */
-:root {
-  --ember-speed: 2;
-}
-
-.ember-flicker {
-  transform-box: view-box;
-  transform-origin: 100px 100px;
-  animation: ember-flicker 0.9s ease-in-out infinite;
-}
-
-.ember-wave-arm {
-  transform-box: view-box;
-  transform-origin: 152px 130px;
-  animation: ember-wave 0.9s ease-in-out infinite;
-}
-
-.ember-walking {
-  animation: ember-bob calc(0.36s / var(--ember-speed)) ease-in-out infinite;
-}
-
-.ember-walking .ember-foot-l,
-.ember-walking .ember-foot-r {
-  animation: ember-step calc(0.36s / var(--ember-speed)) ease-in-out infinite;
-}
-
-.ember-walking .ember-foot-r {
-  animation-delay: calc(0.18s / var(--ember-speed));
-}
-
-.ember-trail {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  border-radius: 2px;
-  background: var(--primary);
-  pointer-events: none;
-  animation: ember-trail 650ms ease-out forwards;
-}
-
-.ember-lit {
-  color: var(--primary);
-  text-shadow: 0 0 14px rgba(255, 60, 0, 0.55);
-  transition:
-    color 300ms ease,
-    text-shadow 300ms ease;
-}
-
-.ember-step-active {
-  border-color: rgba(255, 60, 0, 0.55);
-  background-color: rgba(255, 60, 0, 0.08);
-  box-shadow: 0 0 28px rgba(255, 60, 0, 0.16);
-}
-
-.service-lit {
-  background-color: #110d0c;
-  box-shadow:
-    inset 0 0 0 1px rgba(255, 60, 0, 0.35),
-    inset 0 -120px 140px -90px rgba(255, 60, 0, 0.22);
-}
-
-/* A list row Ember has checked off (EmberRail) */
-.rail-lit {
-  color: rgba(245, 245, 242, 0.92);
-}
-
-.rail-lit > svg {
-  color: var(--primary);
-  animation: rail-pop calc(420ms / var(--ember-speed)) cubic-bezier(0.3, 1.6, 0.5, 1);
-}
-
-@keyframes rail-pop {
-  from {
-    transform: scale(0.4);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-@keyframes ember-hop {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-12px);
-  }
-}
-
-.ember-hop {
-  animation: ember-hop calc(420ms / var(--ember-speed)) cubic-bezier(0.3, 1.4, 0.5, 1);
-}
-
-.ember-step-done {
-  border-color: rgba(255, 60, 0, 0.25);
-}
-
-@keyframes ember-flicker {
-  0%,
-  100% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(0.95, 1.07);
-  }
-}
-
-@keyframes ember-wave {
-  0%,
-  100% {
-    transform: rotate(28deg);
-  }
-  50% {
-    transform: rotate(8deg);
-  }
-}
-
-@keyframes ember-bob {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-3deg);
-  }
-  50% {
-    transform: translateY(-4px) rotate(3deg);
-  }
-}
-
-@keyframes ember-step {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-14px);
-  }
-}
-
-@keyframes ember-trail {
-  from {
-    opacity: 1;
-    transform: translate(0, 0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translate(var(--dx), var(--dy)) scale(0.3);
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-
-  .ember-flicker,
-  .ember-wave-arm,
-  .ember-hop,
-  .ember-walking,
-  .ember-walking .ember-foot-l,
-  .ember-walking .ember-foot-r {
-    animation: none;
   }
 
   .caret,
@@ -468,8 +279,7 @@
     animation: none;
   }
 
-  .reveal,
-  .marquee-track {
+  .reveal {
     transition: none;
     animation: none;
     transform: none;

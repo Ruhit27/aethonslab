@@ -1,15 +1,15 @@
 import Anthropic from "@anthropic-ai/sdk";
 import {
   FALLBACK_REPLY,
-  WHATSAPP_INSTRUCTIONS,
+  CHAT_INSTRUCTIONS,
   chatReply,
   createRateLimiter,
   type ChatTurn,
 } from "@/lib/autopilot";
 
 /**
- * Backs the on-site WhatsApp-style demo (/demo). Same brain and tone as the
- * real WhatsApp bot; the browser keeps the conversation and sends it each turn.
+ * Backs the on-site chat (the "Ask us anything" widget and /demo). The browser
+ * keeps the conversation and sends it each turn.
  */
 
 const MAX_TURNS = 20;
@@ -56,7 +56,7 @@ export async function POST(request: Request) {
   }
 
   try {
-    const reply = await chatReply(WHATSAPP_INSTRUCTIONS, messages);
+    const reply = await chatReply(CHAT_INSTRUCTIONS, messages);
     return Response.json({ reply: reply ?? FALLBACK_REPLY });
   } catch (error) {
     if (error instanceof Anthropic.APIError) {

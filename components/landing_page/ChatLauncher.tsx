@@ -3,7 +3,7 @@
 import * as React from "react";
 import { Bot, MessageCircle, X } from "lucide-react";
 import { DemoChat } from "@/components/demo/WhatsAppDemo";
-import { WHATSAPP_LINK } from "../constants";
+import { WHATSAPP_LINK } from "./content";
 
 /**
  * Floating Aethon Lab button, bottom-right on every screen size. Opens the
